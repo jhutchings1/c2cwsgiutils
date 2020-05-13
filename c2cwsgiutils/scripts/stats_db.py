@@ -163,6 +163,7 @@ def do_extra(session, extra, reporter):
 
 def main():
     c2cwsgiutils.setup_process.init()
+    sentry.init()
 
     args = _parse_args()
     reporter = Reporter(args)
@@ -201,5 +202,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sentry.init()
     main()
