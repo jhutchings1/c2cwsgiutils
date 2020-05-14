@@ -15,7 +15,7 @@ import c2cwsgiutils.setup_process
 from c2cwsgiutils import sentry, stats
 from c2cwsgiutils.prometheus import PushgatewayGroupPublisher
 
-LOG = logging.getLogger("stats_db")
+LOG = logging.getLogger(__name__)
 
 
 def _parse_args():
